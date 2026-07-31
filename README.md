@@ -4,19 +4,29 @@ QueueLess is a MERN-stack real-time queue management system. Customers can join 
 
 ## Features
 
-- JWT authentication with customer, staff, and owner roles
-- Business and queue management
-- Customer token generation
-- Live queue position and status
-- Staff controls: call next, complete current, skip current
-- Socket.IO real-time queue updates
-- Token-specific real-time call events
-- Browser beep alert using the Web Audio API
-- Optional browser notifications
-- Responsive React + Tailwind UI
-- MongoDB persistence with Mongoose
-- Clean client/server separation
+For Customers
+*Live Queue Tracking: See exactly who is currently being served and how many people are ahead in the queue.
 
+*Remote Join: Join a queue virtually without having to be physically present at the venue.
+
+*Real-time Alerts: Receive notifications (e.g., "🔔 Your turn is approaching") when it's almost time to be served.
+
+For Staff & Businesses
+*Staff Dashboard: A dedicated operations hub to manage businesses and queues.
+
+*Multi-Business Support: Create and manage multiple businesses (e.g., City Care Clinic, Momoland) from a single account.
+
+*Queue Generation: Create specific queues (e.g., "General Queue") under each business and manually or automatically move customers through it in real-time.
+
+📸 Screenshots
+1. Landing Page
+  ![Landing Page](<Screenshot 2026-07-31 230844-1.png>)
+
+2. Live Customer Queue
+  ![Live Customer Queue](<Screenshot 2026-07-31 231059.png>)
+
+3. Staff Dashboard
+   ![Staff Dashboard](<Screenshot 2026-07-31 231121.png>)
 ## Project structure
 
 ```text
@@ -159,3 +169,10 @@ For a production deployment, consider adding Redis for horizontal Socket.IO scal
 
 ### Tab-specific login sessions
 QueueLess stores auth in `sessionStorage` instead of `localStorage`, so each browser tab can keep its own login while still surviving refresh. This makes it easier to test customer and staff flows side by side.
+
+🤝 Contributing
+Contributions, issues, and feature requests are welcome!
+Feel free to check the issues page.
+
+📝 License
+This project is MIT licensed.
