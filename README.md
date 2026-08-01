@@ -5,18 +5,18 @@ QueueLess is a MERN-stack real-time queue management system. Customers can join 
 ## Features
 
 For Customers
-*Live Queue Tracking: See exactly who is currently being served and how many people are ahead in the queue.
+• Live Queue Tracking: See exactly who is currently being served and how many people are ahead in the queue.
 
-*Remote Join: Join a queue virtually without having to be physically present at the venue.
+• Remote Join: Join a queue virtually without having to be physically present at the venue.
 
-*Real-time Alerts: Receive notifications (e.g., "🔔 Your turn is approaching") when it's almost time to be served.
+• Real-time Alerts: Receive notifications (e.g., "🔔 Your turn is approaching") when it's almost time to be served.
 
 For Staff & Businesses
-*Staff Dashboard: A dedicated operations hub to manage businesses and queues.
+• Staff Dashboard: A dedicated operations hub to manage businesses and queues.
 
-*Multi-Business Support: Create and manage multiple businesses (e.g., City Care Clinic, Momoland) from a single account.
+• Multi-Business Support: Create and manage multiple businesses (e.g., City Care Clinic, Momoland) from a single account.
 
-*Queue Generation: Create specific queues (e.g., "General Queue") under each business and manually or automatically move customers through it in real-time.
+• Queue Generation: Create specific queues (e.g., "General Queue") under each business and manually or automatically move customers through it in real-time.
 
 📸 Screenshots
 1. Landing Page
