@@ -8,8 +8,8 @@ export async function register(req, res) {
     return res.status(400).json({ message: 'Name, email, and password are required.' });
   }
 
-  if (!['customer', 'owner'].includes(role)) {
-    return res.status(400).json({ message: 'Public registration only supports customer or owner accounts.' });
+  if (!['customer', 'owner', 'staff'].includes(role)) {
+    return res.status(400).json({ message: 'Public registration only supports customer, owner, or staff accounts.' });
   }
 
   const existing = await User.findOne({ email: email.toLowerCase() });

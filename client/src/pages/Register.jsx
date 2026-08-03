@@ -27,7 +27,7 @@ export default function Register() {
     <section className="mx-auto max-w-md py-12">
       <div className="rounded-2xl border border-slate-200 bg-white p-7 shadow-soft">
         <h1 className="text-3xl font-black">Create your account</h1>
-        <p className="mt-2 text-slate-500">Choose customer to join queues or owner to create a business.</p>
+        <p className="mt-2 text-slate-500">Choose customer to join queues, staff to help manage them, or owner to create a business.</p>
         {error && <p className="mt-4 rounded-lg bg-rose-50 p-3 text-sm font-medium text-rose-700">{error}</p>}
         <form onSubmit={handleSubmit} className="mt-6 space-y-4">
           <label className="block text-sm font-semibold">
@@ -46,6 +46,7 @@ export default function Register() {
             Account type
             <select className="mt-1 w-full rounded-xl border border-slate-300 bg-white px-4 py-3" value={form.role} onChange={(e) => setForm({ ...form, role: e.target.value })}>
               <option value="customer">Customer</option>
+              <option value="staff">Staff member</option>
               <option value="owner">Business owner</option>
             </select>
           </label>
