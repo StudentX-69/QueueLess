@@ -8,6 +8,12 @@ import queueRoutes from './routes/queueRoutes.js';
 import { errorHandler, notFound } from './middleware/errorHandler.js';
 
 const app = express();
+const noopIo = {
+  to: () => noopIo,
+  emit: () => {},
+};
+
+app.set('io', noopIo);
 
 app.use(helmet());
 app.use(cors({ origin: process.env.CLIENT_URL || 'http://localhost:5173' }));
