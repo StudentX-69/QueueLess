@@ -4,6 +4,7 @@ import { Server } from 'socket.io';
 import app from './app.js';
 import { connectDB } from './config/db.js';
 import { registerSocketHandlers } from './sockets/socket.js';
+import { corsOptions } from './utils/cors.js';
 
 const PORT = Number(process.env.PORT) || 5000;
 
@@ -13,7 +14,7 @@ async function bootstrap() {
   const server = http.createServer(app);
   const io = new Server(server, {
     cors: {
-      origin: process.env.CLIENT_URL || 'http://localhost:5173',
+      origin: corsOptions,
       methods: ['GET', 'POST'],
       credentials: true,
     },
